@@ -30,3 +30,7 @@
 - Ao chamar um método dentro de um evento no render, utilizar sempre this.nomeDoMetodo e não executar o método e sim chamar (sem o () no final)
 - Atenção aos CONTEXTOS entre State, Propos e Componente, são diferentes. Um this dentro de um componente não chama o this.state
 - state é uma função assíncrona, ou seja, é possível trabalhar apenas com o state do momento
+
+# Redux
+- É uma lib capaz de gerenciar os estados (state) dos formulários
+- Recomendado utilizar para qualquer aplicação que necessitam gerenciar o estado dos componentes
