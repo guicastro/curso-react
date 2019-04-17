@@ -2,10 +2,26 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { Button, AppBar, Toolbar, IconButton } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles'
+
+const styles = {
+  root: {
+    flexGrow: 1
+  }
+}
+
 class App extends Component {
   render() {
+
+    const { classes } = this.props;
+    console.log('classes', classes);
+
     return (
-      <div className="App">
+      <div className={classes.root}>
+        <AppBar>
+          <Toolbar></Toolbar>
+        </AppBar>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -19,10 +35,12 @@ class App extends Component {
           >
             Learn React
           </a>
+          <br/>
+          <Button variant="contained" color="primary">Meu botão</Button>
         </header>
       </div>
     );
   }
 }
 
-export default App;
+export default withStyles(styles)(App);
