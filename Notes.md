@@ -34,3 +34,6 @@
 # Redux
 - É uma lib capaz de gerenciar os estados (state) dos formulários
 - Recomendado utilizar para qualquer aplicação que necessitam gerenciar o estado dos componentes
+- Importante noemar o formulários Redux, deve ser um nome único
+- Em aplicações usando Redux o "form" pode ser chamado de Componente e o que era o componente passa a se chamar de container, pois irá receber os forms redux
+- Conforme a aplicação cresce, pode ficar muito grande trabalhar num mesmo arquivo com o componente e com o container, uma das boas práticas é criar pastas separadas para containers e para componentes
