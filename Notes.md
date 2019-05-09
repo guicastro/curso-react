@@ -33,7 +33,12 @@
 
 # Redux
 - É uma lib capaz de gerenciar os estados (state) dos formulários
+- Utiliza os conceitos e padrões da arquitetura Flux, o Redux é uma implementação do Flux
 - Recomendado utilizar para qualquer aplicação que necessitam gerenciar o estado dos componentes
 - Importante noemar o formulários Redux, deve ser um nome único
 - Em aplicações usando Redux o "form" pode ser chamado de Componente e o que era o componente passa a se chamar de container, pois irá receber os forms redux
 - Conforme a aplicação cresce, pode ficar muito grande trabalhar num mesmo arquivo com o componente e com o container, uma das boas práticas é criar pastas separadas para containers e para componentes
+- Como funciona a arquitetura Flux: View -> Action -> Dispatcher -> Store -> View
+- A Store recebe e ação e determina com os dados serão tratados e como será a interação com a View
+- Para uma boa organização da aplicação, concentre sua aplicação em uma única Store
+- No Redux não se altera o estado, se retorna um novo estado com as modificações
