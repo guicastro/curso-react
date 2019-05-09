@@ -43,4 +43,4 @@
 - Para uma boa organização da aplicação, concentre sua aplicação em uma única Store
 - No Redux não se altera o estado, se retorna um novo estado com as modificações
 - Uma boa prática é criar uma estrutura de pastas para utilizar nos projetos do Redux, como Actions, Components, Containers e Reducers
-
+- Sempre que se criar uma nova action (evento) deve-se criar uma ActionType
